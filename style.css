@@ -263,7 +263,7 @@ nav .fa-solid{
 @media only screen and (max-width: 600px)
 {
     #header{
-        background-image: url(../lakshay.png);
+        background-image: url(https://raw.githubusercontent.com/lakshayuppal779/portfoliol123/main/lakshay.png);
         background-position:right;
         background-repeat: no-repeat;
         background-size: 200px 300px;
