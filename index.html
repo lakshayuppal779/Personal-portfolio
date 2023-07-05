@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <h1><span>P</span>ortfolio.</h2>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web developer</p>
@@ -31,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="https://raw.githubusercontent.com/lakshayuppal779/portfoliol123/main/about.jpg">
+                    <img src="../about.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
@@ -170,6 +172,15 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+      <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+         sidemeu.style.right="0";
+        }
+        function closemenu(){
+         sidemeu.style.right="-200px";
+        }
       </script>
 </body>
 </html>
